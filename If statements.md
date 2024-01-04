@@ -28,5 +28,19 @@ fi
 8. `sudo apt update`
 The sudo apt update command is **used to download or refresh the local package index and to provide the system with the most recent information about available packages from the repositories**.
 
-9. `command -v`  is a command that  checks whether a command exists
-10. 
+9. `command -v`  is a *command* that  checks whether a command exist
+the square brackets are used in the if statements if the format is test
+`man test` and find out more
+
+if not, for instance, `command -v` which is a command by itself, the test format isn't executed. The if is true if the particular command exists
+
+for example:
+
+```
+if command -v htop
+#true
+
+if command -v lmao
+#false
+```
+
