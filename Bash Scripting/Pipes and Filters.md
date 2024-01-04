@@ -2,7 +2,7 @@
 combining existing programs in different ways
 
 1. `wc` : word count : returns three values, the number of lines, words and characters in the file
-2. `wc -l` : outputs only the number of lines
+2. `wc -l` : outputs only the number of lines, `-m` : number of characters, `-w` : number of words
 3. `>` redirects the command's output to a file instead of printing it to the screen.
 	ex. `$ wc -l *.pdb > lengths.txt`
 
@@ -30,10 +30,18 @@ $ tail -n 2 animals.csv >> animals-subset.csv
 
 ### Passing the output to another command
 
-say you want to print the first two lines of a sorted output(of some file) into another file
-instead of writing two separate commands like so:
+say you want to print the first two lines of a sorted output(of some file) on the screen
+we use the pipe symbol `|`  to transfer the output as follows:
 ```
-$ sort -n
+$ sort -n lengths.txt | head -n 1
 ```
 
-	
+### Combining multiple commands
+
+`$ wc -l *.pdb | sort -n | head -n 1`
+
+output is sorted according the number of lines in each file, and the first line of this output is printed onto the screen.
+
+`$ wc -l` : does nothing, terminal sits there and waits for us to give some kind of input interactively.
+
+![Redirects and Pipes of different commands: "wc -l *.pdb" will direct theoutput to the shell. "wc -l *.pdb > lengths" will direct output to the file"lengths". "wc -l *.pdb | sort -n | head -n 1" will build a pipeline where theoutput of the "wc" command is the input to the "sort" command, the output ofthe "sort" command is the input to the "head" command and the output of the"head" command is directed to the shell](https://swcarpentry.github.io/shell-novice/fig/redirects-and-pipes.svg)
