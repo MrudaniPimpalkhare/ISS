@@ -15,11 +15,25 @@ you could send this sorted output to another files using the `>`  symbol.
 *redirecting the output of a command to the same file is usually a bad idea - might lead to unnecessary and unrecoverable modifications*
 
 
-2. 
+2. `>>` is similar to the `>` operator, except it appends the string, or the content written to the file, in case the file already exists. `>` will overwrite the contents
 
 
-2. `head -n (number) [file name]` gets the first (number) lines of the file.
+3. `head -n (number) [file name]` gets the first (number) lines of the file.
 
-	
+4. Appending data
+```
+$ head -n 3 animals.csv > animals-subset.csv
+$ tail -n 2 animals.csv >> animals-subset.csv
+```
+ head : appends the first few lines
+ tail : appends the last few lines
+
+### Passing the output to another command
+
+say you want to print the first two lines of a sorted output(of some file) into another file
+instead of writing two separate commands like so:
+```
+$ sort -n
+```
 
 	
