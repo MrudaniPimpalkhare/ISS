@@ -48,3 +48,15 @@ destination: name of the new location/ file.
 4. `mv file.txt .`
 	the file will be transferred to the directory you are currently working on.
 
+5. `rm [FILENAME]`  removes the file (forever)
+	`rm -i` option gives a prompt before every removal 
+	(a good practice)
+
+	
+
+## Wildcards
+
+1. *  represents zero or more other characters
+2. ? represents just one character
+3. ? (n times) would represent n characters
+
