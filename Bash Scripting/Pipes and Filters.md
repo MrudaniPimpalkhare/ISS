@@ -25,7 +25,7 @@ you could send this sorted output to another files using the `>`  symbol.
 $ head -n 3 animals.csv > animals-subset.csv
 $ tail -n 2 animals.csv >> animals-subset.csv
 ```
- head : appends the first few lines
+ head : appends the first few lines,
  tail : appends the last few lines
 
 ### Passing the output to another command
