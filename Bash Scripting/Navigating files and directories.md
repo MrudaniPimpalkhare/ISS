@@ -60,3 +60,6 @@ destination: name of the new location/ file.
 2. ? represents just one character
 3. ? (n times) would represent n characters
 
+`.profile` and `.bashrc` 
+
+`.exrc` : used to make some settings into the vi editor
