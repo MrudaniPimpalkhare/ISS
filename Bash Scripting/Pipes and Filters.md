@@ -45,3 +45,21 @@ output is sorted according the number of lines in each file, and the first line 
 `$ wc -l` : does nothing, terminal sits there and waits for us to give some kind of input interactively.
 
 ![Redirects and Pipes of different commands: "wc -l *.pdb" will direct theoutput to the shell. "wc -l *.pdb > lengths" will direct output to the file"lengths". "wc -l *.pdb | sort -n | head -n 1" will build a pipeline where theoutput of the "wc" command is the input to the "sort" command, the output ofthe "sort" command is the input to the "head" command and the output of the"head" command is directed to the shell](https://swcarpentry.github.io/shell-novice/fig/redirects-and-pipes.svg)
+
+ex. finding the 3 files with the least number of lines
+
+`$ wc -l * | sort -n | head -n 3 `
+
+- `sort -r` command sorts the elements in reverse order.
+
+
+### More commands lmao
+
+1. `cut` : used to remove or 'cut out' certain sections of each line in the file
+	it expects the lines to be separated into columns by a character (default : tab), called the delimiter.
+	`$ cut -d , -f 2 animals.csv`
+	`-d` option allows us to choose a delimiter, a comma in this case
+	the `-f` specifies that we want to extract the second column.
+	 
+2. `uniq` filters out adjacent matching in a file.
+	`uniq -c`  gives a count of the number of times a line occurs in its input
