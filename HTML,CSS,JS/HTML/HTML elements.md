@@ -49,11 +49,23 @@ Ways to specify the URL in the `src` attribute:
 ```
 
 2. alt attribute : alternate text for an image in case the image cannot be displayed.
-3. lang attribute : `<html lang="en-US">` : en means english, This defines the language of the page. The last two characters define the country, The US in this case.
+3. lang attribute : `<html lang="en-US">` : en means English, This defines the language of the page. The last two characters define the country, The US in this case.
+4. title attribute : uses single quotes.
+
+Always use quote attribute values, although not required in HTML.
+
+
+### Display elements in HTML
+
+HTML formatting is fixed. Adding extra spaces or lines in your format doesn't change the presentation.
+
+However, check below:
+### Some more tags
+
+1. `<hr>` : used to separate content using a horizontal line
+2. `<br` : used for line breaks
+3. `<pre>` : tag preserves spaces ad line breaks
 4. 
-
-
-
 
 
 

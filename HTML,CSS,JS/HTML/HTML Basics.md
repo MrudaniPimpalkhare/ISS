@@ -23,5 +23,5 @@ HTML tags are not case sensitive.
 ## Index:
 
 1. [[HTML elements]]
-2. 
+2. [[]]
 
