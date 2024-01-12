@@ -7,6 +7,8 @@
 
  `<p>` : tag represents a paragraph
 
+`<div>` : used to encapsulate a block of content
+ `<span>` : inline (div usually starts on a new line, this doesn't).
 ## Links
 
 ```html
